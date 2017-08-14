@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.ls.lsn2_materialdesign_recyclerview.MainActivity">
+    <Button
+        android:text="点击我添加Item"
+        android:onClick="additem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:text="点击我删除Item"
+        android:onClick="removeItem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:text="切换试图"
+        android:onClick="changedView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <android.support.v7.widget.RecyclerView
+        android:background="#FFFFFF"
+        android:layout_gravity="center"
+        android:id="@+id/recyle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
